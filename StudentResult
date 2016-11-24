@@ -1,0 +1,32 @@
+package pkg_practice;
+
+public class StudentResult {
+	
+	String name;
+	String subject;
+	String marks;
+	static String college="JNTU"; 
+	
+StudentResult(String name,String subject,String marks)
+	{
+		this.name=name;
+		this.marks=marks;
+		this.subject=subject;
+	}
+void resultdisplay()
+{
+	
+System.out.println("The result of Student is:" +"College:"+college+"-" + "Name:"+name+" "+"Subject:"+subject+" "+"Marks:"+marks);	
+
+}
+
+public static void main(String args[])
+{
+	StudentResult s1= new StudentResult("A","Maths","90");
+	StudentResult s2= new StudentResult("B","Maths","55");
+	StudentResult s3= new StudentResult("C","Maths","67");
+	s1.resultdisplay();
+	s2.resultdisplay();
+	s3.resultdisplay();
+}
+}
